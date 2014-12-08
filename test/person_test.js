@@ -11,4 +11,11 @@ describe("Creating a new person", function(){
     done();
   });
 
+  it("should calculate BMI correctly", function(done){
+    p1 = new Person('Bob', 190, 70);
+    p1.calculateBMI();
+    expect(p1.bmi).to.equal(100);
+    done();
+  });
+
 });
