@@ -6,6 +6,8 @@ describe("Creating a new person", function(){
   it("should have at least a name", function(done){
     p1 = new Person('John Doe');
     expect(p1.name).to.equal('John Doe');
+    p2 = new Person();
+    expect(p2.name).not.to.be.an('undefined');
     done();
   });
 
